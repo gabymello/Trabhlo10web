@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplicação de Números</title>
+  <style>
+    body {
+      background-color: #f8bbd0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      color: #880e4f;
+    }
+
+    button {
+      background-color: #e91e63;
+      color: white;
+      padding: 20px 40px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Multiplicação de Números</h1>
+  <p>Clique no botão abaixo para calcular a multiplicação de dois números.</p>
+  
+  <button onclick="multiplicar()">Calcular Multiplicação</button>
+
+  <script>
+    function multiplicar() {
+      const num1 = parseFloat(prompt("Digite o primeiro número:"));
+      const num2 = parseFloat(prompt("Digite o segundo número:"));
+
+      if (!isNaN(num1) && !isNaN(num2)) {
+        const resultado = num1 * num2;
+        alert("O resultado da multiplicação é: " + resultado);
+      } else {
+        alert("Por favor, digite números válidos.");
+      }
+    }
+  </script>
+</body>
+</html>
